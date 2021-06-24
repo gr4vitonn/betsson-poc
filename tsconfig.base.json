@@ -1,0 +1,43 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@myorg/home": ["libs/home/src/index.ts"],
+      "@myorg/shell/header": ["libs/shell/header/src/index.ts"],
+      "@myorg/sportsbook/bet-builder": [
+        "libs/sportsbook/bet-builder/src/index.ts"
+      ],
+      "@myorg/sportsbook/bet-history": [
+        "libs/sportsbook/bet-history/src/index.ts"
+      ],
+      "@myorg/sportsbook/home": ["libs/sportsbook/home/src/index.ts"],
+      "@myorg/sportsbook/live-betting": [
+        "libs/sportsbook/live-betting/src/index.ts"
+      ],
+      "@myorg/sportsbook/price-boost": [
+        "libs/sportsbook/price-boost/src/index.ts"
+      ],
+      "@myorg/sportsbook/settings": ["libs/sportsbook/settings/src/index.ts"],
+      "@myorg/sportsbook/starting-soon": [
+        "libs/sportsbook/starting-soon/src/index.ts"
+      ],
+      "@myorg/sportsbook/statistics": [
+        "libs/sportsbook/statistics/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

@@ -1,0 +1,74 @@
+{
+  "npmScope": "myorg",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
+  "projects": {
+    "casino": {
+      "tags": []
+    },
+    "casino-e2e": {
+      "tags": [],
+      "implicitDependencies": ["casino"]
+    },
+    "home": {
+      "tags": []
+    },
+    "shell": {
+      "tags": []
+    },
+    "shell-e2e": {
+      "tags": [],
+      "implicitDependencies": ["shell"]
+    },
+    "shell-header": {
+      "tags": []
+    },
+    "sportsbook": {
+      "tags": []
+    },
+    "sportsbook-bet-builder": {
+      "tags": []
+    },
+    "sportsbook-bet-history": {
+      "tags": []
+    },
+    "sportsbook-e2e": {
+      "tags": [],
+      "implicitDependencies": ["sportsbook"]
+    },
+    "sportsbook-home": {
+      "tags": []
+    },
+    "sportsbook-live-betting": {
+      "tags": []
+    },
+    "sportsbook-price-boost": {
+      "tags": []
+    },
+    "sportsbook-settings": {
+      "tags": []
+    },
+    "sportsbook-starting-soon": {
+      "tags": []
+    },
+    "sportsbook-statistics": {
+      "tags": []
+    }
+  }
+}
